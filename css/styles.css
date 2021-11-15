@@ -12,6 +12,11 @@
   --team-color: #f5f4fa;
   --con-foot-color: rgba(255, 255, 255, 0.6);
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--chapter-color);
@@ -247,8 +252,6 @@ img {
 /*FOOTER*/
 .footer {
   background: var(--background-color);
-}
-.ftr-content {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -287,16 +290,16 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  width: 322px;
-  margin: 20px auto 4px;
+  margin-bottom: 4px;
 }
 .project-category {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  width: 322px;
   color: var(--description-color);
-  margin: 0px auto 0px;
+}
+.project-text {
+  padding: 20px 24px;
 }
 .btn-filter {
   cursor: pointer;
@@ -308,6 +311,9 @@ img {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  height: 38px;
+  padding: 6px 22px;
+  border: 0px;
 }
 .btn-filter:active {
   background: var(--logo-color);
@@ -340,7 +346,6 @@ img {
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  padding-bottom: 20px;
 }
 .flex-item:nth-child(3n) {
   margin-right: 0px;
